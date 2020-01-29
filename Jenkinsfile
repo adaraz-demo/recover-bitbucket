@@ -9,7 +9,7 @@ pipeline {
       stage('Checkout') {
           steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/adaraz-demo/bitbucket-rd.git'
+            git 'https://github.com/adaraz-demo/recover-bitbucket.git'
           }
       }
 
