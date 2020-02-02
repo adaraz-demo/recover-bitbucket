@@ -1,6 +1,8 @@
 pipeline {
-   agent any
-    environment {
+
+   agent { label 'master'}
+
+   environment {
       AZURE_STORAGE_ACCOUNT     = credentials('jenkins-azure-blob-account-id')
       AZURE_STORAGE_KEY = credentials('jenkins-azure-blob-account-key')
   }
